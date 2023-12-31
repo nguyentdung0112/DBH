@@ -1,0 +1,150 @@
+.dashboard .cards-container {
+	margin:25px auto;
+	display:grid;
+	width:100%;
+	grid-template-columns:repeat(3, minmax(300px, 1fr));
+	grid-gap:25px;
+	grid-template-rows:1fr;
+}
+
+.dashboard .card-bg {
+	border:1px solid #f2f2f2;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.dashboard .wide {
+	grid-column:span 2;
+}
+
+.dashboard .c-p {
+	cursor:pointer;
+}
+
+.dashboard .pane-image {
+	min-width:3rem;
+	height:3rem;
+	margin-right:1rem;
+}
+
+.dashboard .card-section {
+	padding:0 1.5rem;
+	box-sizing: border-box;
+}
+
+.dashboard .footer {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:1.5rem 0;
+	width:80%;
+	margin:0 auto;
+}
+
+.dashboard .footer-link {
+	display:flex;
+	align-items:center;
+	padding:0;
+	color:#333;
+}
+
+@media (max-width:1320px) {
+	.dashboard .cards-container {
+		grid-gap: 15px;
+		grid-template-columns: repeat(2, minmax(270px, 1fr));
+	}
+	.dashboard .wide {
+		grid-column:span 1;
+	}
+	.dashboard .card-section {
+		padding:0 0.5rem;
+	}
+	.dashboard .table-rem {
+		display:none !important;
+	}
+	.dashboard .footer {
+		width:90%;
+	}
+}
+
+@media (max-width:920px) {
+	.dashboard .cards-container {
+		max-width:500px;
+		width:90%;
+		font-size: 0.85rem;
+		grid-template-columns: repeat(1, minmax(220px, 100%));
+	}
+	.dashboard .msg-rem {
+		display:none !important;
+	}
+	.dashboard .p-4 {
+		padding:1rem !important;
+	}
+
+	.dashboard .pane-image {
+		min-width:2rem;
+		height:2rem;
+		margin-right:0.5rem;
+	}
+	.dashboard .footer-rem, .dashboard .footer-link {
+		display:none !important;
+	}
+	.dashboard .footer .d-flex{
+		margin:0 auto;
+		text-align: center;
+	}
+}
+@media (max-width:375px) {
+	.dashboard .h5 {
+		font-size:1rem;
+	}
+	.dashboard .cards-container {
+		margin:10px 0;
+	}
+}
+body {
+  background-color: #fbfbfb;
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    height: unset!important;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0;
+  /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  /* z-index: 600; */
+}
+
+.sidebar.show {
+  height: 100vh;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
+}

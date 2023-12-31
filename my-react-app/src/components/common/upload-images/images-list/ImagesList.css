@@ -1,0 +1,8 @@
+.images-list-container {
+    display: flex;
+    padding: 10px;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+

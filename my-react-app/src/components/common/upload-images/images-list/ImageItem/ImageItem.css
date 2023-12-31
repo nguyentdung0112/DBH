@@ -1,0 +1,22 @@
+.image-container {
+  height: 100%;
+  /* width: 25%; */
+  padding: 5px;
+  position: relative;
+}
+
+.image-css img {
+  /* height: 200px;
+  width: 300px; */
+  max-height: 200px;
+  max-width: 300px;
+}
+
+.image-overlay {
+  position: absolute;
+  z-index: 5;
+  background-color: red;
+  right: 0;
+  margin-right: 5px;
+  cursor: pointer;
+}

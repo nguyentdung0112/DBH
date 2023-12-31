@@ -1,0 +1,34 @@
+.payment-content-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-content-label,
+.payment-content-info {
+  font-family: "Poppins";
+  font-size: 21px;
+}
+
+.payment-content-label {
+  font-weight: 400;
+}
+
+.payment-content-info {
+  font-weight: 600;
+}
+
+.mainContainer {
+  height: 100vh;
+  background-color: #e6e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerContainer {
+  background-color: #5a4747;
+  width: 500px;
+  margin: 30px;
+  border-radius: 20px;
+  color: #e6e7e7;
+}
