@@ -1,10 +1,10 @@
 # DBH
 
-In the project directory, you can run:
-open terminal: cd be
+In the project directory, you can run: 
+- open terminal: cd be
 BE:
 npm run devStart
-open terminal: cd my-react-app
+- open terminal: cd my-react-app
 FE:
 npm start
 Runs the app in the development mode.
